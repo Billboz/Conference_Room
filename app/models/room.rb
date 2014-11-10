@@ -9,7 +9,12 @@
 #  description :text
 #  created_at  :datetime
 #  updated_at  :datetime
+#  photo       :string(255)
+#  campus_id   :integer
 #
 
 class Room < ActiveRecord::Base
+  has_many :users, through: :reservations
+  has_many :reservations
+  belongs_to :campus
 end
