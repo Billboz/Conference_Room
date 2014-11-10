@@ -1,0 +1,198 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+  #DIV_1 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    height: 265px;
+    width: 1170px;
+    perspective-origin: 585px 132.5px;
+    transform-origin: 585px 132.5px;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal normal normal 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0px 55px;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 0px 15px;
+  }
+  /*#DIV_1*/
+
+  #DIV_1:after {
+    box-sizing: border-box;
+    clear: both;
+    color: rgb(51, 51, 51);
+    display: table;
+    width: 1px;
+    perspective-origin: 0.5px 0px;
+    transform-origin: 0.5px 0px;
+    content: ' ';
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal normal normal 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    outline: rgb(51, 51, 51) none 0px;
+  }
+  /*#DIV_1:after*/
+
+  #DIV_1:before {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    display: table;
+    width: 1px;
+    perspective-origin: 0.5px 0px;
+    transform-origin: 0.5px 0px;
+    content: ' ';
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal normal normal 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    outline: rgb(51, 51, 51) none 0px;
+  }
+  /*#DIV_1:before*/
+
+  #FORM_2 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    height: 265px;
+    max-width: 330px;
+    width: 330px;
+    perspective-origin: 165px 132.5px;
+    transform-origin: 165px 132.5px;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal normal normal 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0px 405px;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 15px;
+  }
+  /*#FORM_2*/
+
+  #H2_3 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    height: 33px;
+    width: 300px;
+    perspective-origin: 150px 16.5px;
+    transform-origin: 150px 16.5px;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 500 normal 30px/33px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 20px 0px 10px;
+    outline: rgb(51, 51, 51) none 0px;
+  }
+  /*#H2_3*/
+
+  #INPUT_4 {
+    background-position: 100% 50%;
+    box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+    color: rgb(85, 85, 85);
+    display: block;
+    height: 44px;
+    position: relative;
+    width: 300px;
+    perspective-origin: 150px 22px;
+    transform-origin: 150px 22px;
+    background: rgb(255, 255, 255) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=) no-repeat scroll 100% 50% / auto padding-box border-box;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px 4px 0 0;
+    font: normal normal normal normal 16px/22.8571434020996px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0px 0px -1px;
+    outline: rgb(85, 85, 85) none 0px;
+    padding: 10px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  }
+  /*#INPUT_4*/
+
+  #INPUT_5 {
+    background-position: 100% 50%;
+    box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+    color: rgb(85, 85, 85);
+    display: block;
+    height: 44px;
+    position: relative;
+    width: 300px;
+    perspective-origin: 150px 22px;
+    transform-origin: 150px 22px;
+    background: rgb(255, 255, 255) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=) no-repeat scroll 100% 50% / auto padding-box border-box;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 0 0 4px 4px;
+    font: normal normal normal normal 16px/22.8571434020996px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0px 0px 10px;
+    outline: rgb(85, 85, 85) none 0px;
+    padding: 10px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  }
+  /*#INPUT_5*/
+
+  #DIV_6 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    height: 20px;
+    position: relative;
+    width: 300px;
+    perspective-origin: 150px 10px;
+    transform-origin: 150px 10px;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal normal normal 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 10px 0px;
+    outline: rgb(51, 51, 51) none 0px;
+  }
+  /*#DIV_6*/
+
+  #LABEL_7 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    max-width: 100%;
+    min-height: 20px;
+    width: 112.359375px;
+    perspective-origin: 56.171875px 10px;
+    transform-origin: 56.171875px 10px;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal normal normal 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 0px 0px 0px 20px;
+  }
+  /*#LABEL_7*/
+
+  #INPUT_8 {
+    color: rgb(51, 51, 51);
+    display: block;
+    height: 12px;
+    position: absolute;
+    width: 12px;
+    align-self: stretch;
+    perspective-origin: 6px 6px;
+    transform-origin: 6px 6px;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal normal normal 14px/normal 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 4px 0px 0px -20px;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 0px;
+  }
+  /*#INPUT_8*/
+
+  #BUTTON_9 {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: block;
+    height: 45px;
+    min-height: 0px;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 300px;
+    perspective-origin: 150px 22.5px;
+    transform-origin: 150px 22.5px;
+    background: rgb(66, 139, 202) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 1px solid rgb(53, 126, 189);
+    border-radius: 6px 6px 6px 6px;
+    font: normal normal normal normal 18px/23.9400005340576px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    outline: rgb(255, 255, 255) none 0px;
+    padding: 10px 16px;
+  }
+
+
+  /*#BUTTON_9*/
+
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/

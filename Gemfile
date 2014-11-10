@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -38,3 +38,30 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+ruby '2.0.0'
+
+gem 'carrierwave'
+gem 'bcrypt', '~> 3.1.9'
+
+# User the 'thin' server instead of the default webrick
+gem 'thin'
+
+# Use postgres and the Heroku rails gem for Heroku
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+  gem 'pry-rails'
+end
+
+# For now, continue to use sqlite3 in development
+# Also use pry for the console
+group :development do
+  gem 'sqlite3'
+  gem 'pry-rails'
+  gem 'annotate'
+  gem 'debugger'
+  gem 'pry-debugger'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+
+end
