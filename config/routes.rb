@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   resources :users
 
-  get 'sign_up', to: 'session#sign_up'
+  get 'signup', to: 'session#signup'
 
   post 'signin', to: 'session#signin'
 

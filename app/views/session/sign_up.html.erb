@@ -1,50 +1,59 @@
 <body style="background-color: #EEEEEE">
-  <div id="DIV_1" >
-    <form id="FORM_2">
-      <h2 id="H2_3">
-        Please sign in
-      </h2>
-      <input type="email" placeholder="Email address" id="INPUT_4" />
-      <input type="password" placeholder="Password" id="INPUT_5" />
-      <div id="DIV_6">
 
-        <label id="LABEL_7">
-          <input type="checkbox" value="remember-me" id="INPUT_8" /> Remember me
-        </label>
+<form class="form-horizontal">
+  <fieldset>
+
+    <!-- Form Name -->
+
+    <center><h1>The Iron Yard Conference Room</h1></center>
+
+    <center><h2>Sign Up Form</h2></center>
+
+<%= form_tag signup_path, class: 'form' do %>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="textinput"></label>
+      <div class="col-md-4">
+        <%= text_field_tag "name", nil, class: "form-control input-md", placeholder: 'Name', :require => true, :autofocus => true  %>
       </div>
-      <button type="submit" id="BUTTON_9">
-        Sign in
-      </button>
-    </form>
-  </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="textinput"></label>
+      <div class="col-md-4">
+        <%= text_field_tag "email", nil, class: "form-control input-md", placeholder: 'Email', :require => true %>
+      </div>
+    </div>
+
+    <!-- Password input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="passwordinput"></label>
+      <div class="col-md-4">
+        <%= password_field_tag "password", nil, class: "form-control input-md", placeholder: 'Password', :require => true %>
+      </div>
+    </div>
+
+    <!-- Password input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="passwordconfirmation"></label>
+      <div class="col-md-4">
+        <%= password_field_tag "password_confirmation", nil, class: "form-control input-md", placeholder: 'Password Confirmation' %>
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="sign_up"></label>
+      <div class="col-md-4">
+        <%= submit_tag "Sign up", class: "btn btn-primary" %>
+      </div>
+    </div>
+
+  </fieldset>
+</form>
 </body>
-
-<div class="jumbotron">
-
-  <% if signed_in? %>
-      <h1>Welcome<%= " " + current_user.name if current_user%>!</h1>
-      <p>Your Mentor Awaits!</p>
-      <p>Choose one of the tabs above.</p>
-  <% else %>
-      <h1>Welcome</h1>
-  <% end %>
-
-
-</div>
-
-<% if !signed_in? %>
-    <h3>Please sign in</h3>
-    <%= form_tag signin_path, class: 'form' do %>
-        <%= text_field_tag "email", nil, placeholder: 'Enter your email' %>
-        <%= password_field_tag "password", nil, placeholder: 'Password' %>
-        <%= submit_tag "Sign in", class: 'btn btn-sm' %>
-    <% end %>
-    <h3>Sign Up</h3>
-    <%= form_tag sign_up_path, class: 'form' do %>
-        <%= text_field_tag "name", nil, placeholder: 'Name' %>
-        <%= text_field_tag "email", nil, placeholder: 'Email' %>
-        <%= password_field_tag "password", nil, placeholder: 'Password' %>
-        <%= password_field_tag "password_confirmation", nil, placeholder: 'Password Confirmation' %>
-        <%= submit_tag "Sign up", class: 'btn btn-sm' %>
-    <% end %>
 <% end %>
+
+
