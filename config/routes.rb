@@ -6,7 +6,11 @@ Rails.application.routes.draw do
 
   resources :users
 
-  get 'sign_up', to: 'welcome#sign_up'
+  get 'sign_up', to: 'session#sign_up'
+
+  post 'signin', to: 'session#signin'
+
+  delete 'signout', to: 'session#signout'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
