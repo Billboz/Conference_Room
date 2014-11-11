@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   get 'signup', to: 'session#signup'
 
+  post 'signup', to: 'session#signup'
+
   post 'signin', to: 'session#signin'
 
   delete 'signout', to: 'session#signout'

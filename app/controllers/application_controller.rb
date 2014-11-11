@@ -20,7 +20,7 @@ class ApplicationController < ActionController::Base
       return true
     else
       flash[:warning] = 'You must be signed in.'
-      #redirect_to root_path
+      redirect_to root_path
     end
   end
 

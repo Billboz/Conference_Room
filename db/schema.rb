@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141110191725) do
+ActiveRecord::Schema.define(version: 20141111193131) do
 
   create_table "campus", force: true do |t|
     t.string   "name"
@@ -53,12 +53,12 @@ ActiveRecord::Schema.define(version: 20141110191725) do
 
   create_table "users", force: true do |t|
     t.string   "name"
-    t.string   "password"
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "role",       limit: 25, default: "student"
+    t.string   "role",            limit: 25, default: "student"
     t.integer  "campus_id"
+    t.string   "password_digest"
   end
 
   add_index "users", ["campus_id"], name: "index_users_on_campus_id"

@@ -1,59 +1,45 @@
-<body style="background-color: #EEEEEE">
+<div class="container">
+    <h1>The Iron Yard Conference Room</h1>
 
-<form class="form-horizontal">
-  <fieldset>
-
-    <!-- Form Name -->
-
-    <center><h1>The Iron Yard Conference Room</h1></center>
-
-    <center><h2>Sign Up Form</h2></center>
-
+    <div>
+      <h2>Sign Up Form</h2>
 <%= form_tag signup_path, class: 'form' do %>
 
     <!-- Text input-->
     <div class="form-group">
-      <label class="col-md-4 control-label" for="textinput"></label>
-      <div class="col-md-4">
+      <div class="col-md-3 col-md-offset-3">
         <%= text_field_tag "name", nil, class: "form-control input-md", placeholder: 'Name', :require => true, :autofocus => true  %>
       </div>
     </div>
 
     <!-- Text input-->
     <div class="form-group">
-      <label class="col-md-4 control-label" for="textinput"></label>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <%= text_field_tag "email", nil, class: "form-control input-md", placeholder: 'Email', :require => true %>
       </div>
     </div>
 
     <!-- Password input-->
     <div class="form-group">
-      <label class="col-md-4 control-label" for="passwordinput"></label>
-      <div class="col-md-4">
+      <div class="col-md-3 col-md-offset-3">
         <%= password_field_tag "password", nil, class: "form-control input-md", placeholder: 'Password', :require => true %>
       </div>
     </div>
 
     <!-- Password input-->
     <div class="form-group">
-      <label class="col-md-4 control-label" for="passwordconfirmation"></label>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <%= password_field_tag "password_confirmation", nil, class: "form-control input-md", placeholder: 'Password Confirmation' %>
       </div>
     </div>
 
     <!-- Button -->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="sign_up"></label>
-      <div class="col-md-4">
-        <%= submit_tag "Sign up", class: "btn btn-primary" %>
+    <div class="form-group text-center">
+      <div class="col-md-12">
+        <%= submit_tag "Sign up", class: "btn btn-primary", method: 'post' %>
       </div>
     </div>
 
-  </fieldset>
-</form>
-</body>
 <% end %>
-
-
+</div>
+</div>

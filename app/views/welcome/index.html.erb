@@ -1,32 +1,24 @@
-<center><h1>Welcome To The Conference App</h1></center>
+<div class="container">
+    <h1>Welcome To The Conference App</h1>
 
+    <div class="container">
+        <h2>Please sign in</h2>
 
-<body style="background-color: #EEEEEE">
-<div id="DIV_1" >
-  <form id="FORM_2">
-    <center><h2 id="H2_3">
-      Please sign in
-    </h2></center>
-    <%= form_tag signin_path, class: 'form' do %>
+        <div>
+            <%= form_tag signin_path, class: 'form' do %>
 
-    <%= text_field_tag "email", nil, placeholder: 'Enter your email', id: "INPUT_4", :require => true, :autofocus => true %>
+            <%= text_field_tag 'email', nil, placeholder: 'Enter your email', :require => true, :autofocus => true %>
 
-    <%= password_field_tag "password", nil, placeholder: 'Password', id: "INPUT_5", :require => true %>
+            <%= password_field_tag 'password', nil, placeholder: 'Password', :require => true %>
+        </div>
+        <div>
+            <label>
+              <input type="checkbox" value="remember-me" /> Remember me
+            </label>
+        </div>
 
-    <div id="DIV_6">
-
-      <label id="LABEL_7">
-        <input type="checkbox" value="remember-me" id="INPUT_8" /> Remember me
-      </label>
+        <%= submit_tag "Sign in", class: 'btn btn-sm' %>
+        <% end %>
     </div>
-
-    <%= submit_tag "Sign in", class: 'btn btn-sm', id: "BUTTON_9" %>
-  </form>
+    <%= link_to 'Sign Up Here', signup_path  %>
 </div>
-</body>
-
-
-<center><%= link_to 'Sign Up Here', signup_path  %></center>
-
-<% end %>
-
