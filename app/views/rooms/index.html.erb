@@ -24,7 +24,7 @@
         <td><%= room.location %></td>
         <td><%= room.sq_ft %></td>
         <td><%= room.description %></td>
-        <td><%= room.photo %></td>
+        <td><%= image_tag room.photo.thumb.url %></td>
         <td><%= link_to 'Show', room %></td>
         <td><%= link_to 'Edit', edit_room_path(room) %></td>
         <td><%= link_to 'Destroy', room, method: :delete, data: { confirm: 'Are you sure?' } %></td>

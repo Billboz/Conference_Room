@@ -40,10 +40,12 @@ gem 'spring',        group: :development
 
 ruby '2.0.0'
 
+gem 'pry-rails'
 gem 'carrierwave' # For uploading files from the user
 gem 'mini_magick' # For picture resizing
 gem 'fog' # For setting up part of the Amazon S3
 gem 'bcrypt', '~> 3.1.9' # For password security
+
 
 # User the 'thin' server instead of the default webrick
 gem 'thin'
@@ -52,19 +54,18 @@ gem 'thin'
 group :production do
   gem 'pg'
   gem 'rails_12factor' # Helps running on Heroku
-  gem 'pry-rails'
 end
 
 # For now, continue to use sqlite3 in development
 # Also use pry for the console
 group :development do
   gem 'sqlite3'
-  gem 'pry-rails'
   gem 'annotate'
   gem 'debugger'
   gem 'pry-debugger'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'letter_opener' #Allows viewing email in browser for testing ease
+  gem 'dotenv-rails'
 
 end
