@@ -27,7 +27,12 @@
     <%= f.label :description %><br>
     <%= f.text_area :description %>
   </div>
-  <div class="actions">
+    <div class="file">
+      <%= f.label :photo %><br>
+      <%= f.file_field :photo %>
+    </div>
+</br>
+    <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>

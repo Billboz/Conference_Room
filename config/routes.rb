@@ -6,6 +6,12 @@ Rails.application.routes.draw do
 
   resources :users
 
+  resources :rooms do
+    collection do
+      post 'search', to: 'rooms#search'
+    end
+  end
+
   get 'signup', to: 'session#signup'
 
   post 'signup', to: 'session#signup'

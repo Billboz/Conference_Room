@@ -3,6 +3,12 @@ class RoomsController < ApplicationController
 
   # GET /rooms
   # GET /rooms.json
+
+  def search
+    @rooms = Room.where('description like ?', "%#{params[:search_query]}%")
+    render template: 'rooms/index'
+  end
+
   def index
     @rooms = Room.all
   end
@@ -69,6 +75,6 @@ class RoomsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def room_params
-      params.require(:room).permit(:name, :location, :sq_ft, :description)
+      params.require(:room).permit(:name, :location, :sq_ft, :description, :photo)
     end
 end

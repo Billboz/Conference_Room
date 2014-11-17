@@ -17,7 +17,7 @@ class SessionController < ApplicationController
         flash[:error] = "We were unable to sign you up. #{user.errors.full_messages.join('. ')}."
       end
 
-      redirect_to root_path
+      redirect_to rooms_path
       #redirect_to signup_path
     end
 
@@ -35,7 +35,8 @@ class SessionController < ApplicationController
       session[:user_id] = nil
       flash[:error] = 'Unable to log in with those credentials.'
     end
-    redirect_to root_path
+    redirect_to rooms_path
+    #redirect_to root_path
   end
 
   def signout

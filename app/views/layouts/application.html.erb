@@ -18,13 +18,16 @@
 </head>
 <body>
 
-<%= render 'layouts/flash_messages' %>
+
+    <%= render 'layouts/flash_messages' %>
 
 
-<%= render 'layouts/signout' %>
+    <%= yield %>
 
-
-<%= yield %>
+    <% if signed_in? %>
+    <%= render 'layouts/footer' %>
+    <% end %>
 
 </body>
+
 </html>
