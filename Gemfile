@@ -45,6 +45,7 @@ gem 'carrierwave' # For uploading files from the user
 gem 'mini_magick' # For picture resizing
 gem 'fog' # For setting up part of the Amazon S3
 gem 'bcrypt', '~> 3.1.9' # For password security
+gem 'activeadmin', github: 'activeadmin'
 
 
 # User the 'thin' server instead of the default webrick

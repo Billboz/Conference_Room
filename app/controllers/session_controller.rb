@@ -36,7 +36,7 @@ class SessionController < ApplicationController
       flash[:error] = 'Unable to log in with those credentials.'
     end
     redirect_to rooms_path
-    #redirect_to root_path
+    #`redirect_to root_path
   end
 
   def signout
