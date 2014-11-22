@@ -16,7 +16,7 @@
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+   test "User exists" do
+     assert  User.count > 0, "Custom Error Message From user_test.rb"
+   end
 end
