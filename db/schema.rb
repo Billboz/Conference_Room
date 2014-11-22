@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141122192037) do
+ActiveRecord::Schema.define(version: 20141122195555) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -35,6 +35,22 @@ ActiveRecord::Schema.define(version: 20141122192037) do
     t.integer  "phone_number"
     t.integer  "zip_code"
     t.string   "street_address"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "conference_room_features", force: true do |t|
+    t.integer  "room_id"
+    t.integer  "feature_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "conference_room_features", ["feature_id"], name: "index_conference_room_features_on_feature_id"
+  add_index "conference_room_features", ["room_id"], name: "index_conference_room_features_on_room_id"
+
+  create_table "features", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

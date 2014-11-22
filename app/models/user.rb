@@ -19,7 +19,9 @@ class User < ActiveRecord::Base
 
   has_secure_password
 
-  validates :name, presence: true
+  validates :name, :role, :campus_id, presence: true
+  validates :password, length: { minimum: 6}
+
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true,
@@ -28,6 +30,6 @@ class User < ActiveRecord::Base
 
   validates :password, length: { minimum: 6 }
   def admin?
-    self.role == 'admin'
+    self.role == 'staff'
   end
 end

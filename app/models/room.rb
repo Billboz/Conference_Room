@@ -16,6 +16,13 @@
 class Room < ActiveRecord::Base
   has_many :reservations
   belongs_to :campus
+  has_many :conference_room_features
+  has_many :features, through: :conference_room_features
+
 
   mount_uploader :photo, PhotoUploader
+
+  validates :name, :campus, presence: true
+
 end
+
