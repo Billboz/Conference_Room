@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="Rails Conference_Room: development" uuid="e29c361e-c864-4a44-95e6-61867beec66c">
-      <secret-storage>memory</secret-storage>
-    </data-source>
+    <data-source name="Rails Conference_Room: development" uuid="e29c361e-c864-4a44-95e6-61867beec66c" />
   </component>
 </project>
