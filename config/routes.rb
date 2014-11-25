@@ -3,10 +3,10 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   root 'welcome#index'
 
-  resources :rooms
-
+  resources :features
+  resources :campuses
+  resources :reservations
   resources :users
-
   resources :rooms do
     collection do
       post 'search', to: 'rooms#search'

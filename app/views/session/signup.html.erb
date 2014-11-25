@@ -1,45 +1,16 @@
 <div class="container">
-    <h1>The Iron Yard Conference Room</h1>
-
-    <div>
-      <h2>Sign Up Form</h2>
-<%= form_tag signup_path, class: 'form' do %>
-
-    <!-- Text input-->
-    <div class="form-group">
-      <div class="col-md-3 col-md-offset-3">
-        <%= text_field_tag "name", nil, class: "form-control input-md", placeholder: 'Name', :require => true, :autofocus => true  %>
+  <%= form_tag signup_path, class: 'form-signup', role: 'form' do %>
+      <h2>Please Sign Up</h2>
+      <%= text_field_tag 'name', nil, class: 'form-control', placeholder: 'Name', :required => true, :autofocus => true %>
+      <%= text_field_tag 'email', nil, class: 'form-control', placeholder: 'Email Address', :required => true %>
+      <%= password_field_tag 'password', nil, class: 'form-control', placeholder: 'Password', :required => true %>
+      <%= password_field_tag 'password_confirmation', nil, class: 'form-control', placeholder: 'Confirm Password', :required => true %>
+      <%= select_tag :campus_id, options_from_collection_for_select(Campus.all, 'id', 'name')%>
+      <div class="checkbox">
+        <label for="remember">
+          <input name="remember" type="checkbox" id="remember" value="1"> Remember me
+        </label>
       </div>
-    </div>
-
-    <!-- Text input-->
-    <div class="form-group">
-      <div class="col-md-3">
-        <%= text_field_tag "email", nil, class: "form-control input-md", placeholder: 'Email', :require => true %>
-      </div>
-    </div>
-
-    <!-- Password input-->
-    <div class="form-group">
-      <div class="col-md-3 col-md-offset-3">
-        <%= password_field_tag "password", nil, class: "form-control input-md", placeholder: 'Password', :require => true %>
-      </div>
-    </div>
-
-    <!-- Password input-->
-    <div class="form-group">
-      <div class="col-md-3">
-        <%= password_field_tag "password_confirmation", nil, class: "form-control input-md", placeholder: 'Password Confirmation' %>
-      </div>
-    </div>
-
-    <!-- Button -->
-    <div class="form-group text-center">
-      <div class="col-md-12">
-        <%= submit_tag "Sign up", class: "btn btn-primary", method: 'post' %>
-      </div>
-    </div>
-
-<% end %>
-</div>
+      <%= submit_tag 'Sign Up', class: 'btn btn-lg btn-primary btn-block' %>
+  <% end %>
 </div>

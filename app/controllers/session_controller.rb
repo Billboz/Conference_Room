@@ -8,11 +8,13 @@ class SessionController < ApplicationController
     if request.post?
       user = User.new(name: params[:name],
                       email: params[:email],
+                      campus_id: params[:campus_id],
                       password: params[:password],
                       password_confirmation: params[:password_confirmation])
       if user.save
         session[:user_id] = user.id
         flash[:notice] = 'You have successfully signed up.'
+        UserMailer.welcome_email(user).deliver
       else
         flash[:error] = "We were unable to sign you up. #{user.errors.full_messages.join('. ')}."
       end

@@ -1,23 +1,43 @@
-<h1>Listing campuses</h1>
+<h3 class="text-center cst_h3">
+  <%= link_to 'Add New', new_campus_path, class: 'btn btn-primary btn-sm', role: 'button', style: 'float: left' %>
+  Campuses - Listing
+</h3>
 
-<table>
+<table class="table">
   <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zip Code</th>
+    <th>Phone Number</th>
+    <th colspan="3"></th>
+  </tr>
   </thead>
 
   <tbody>
-    <% @campuses.each do |campus| %>
+  <% @campuses.each do |campus| %>
       <tr>
-        <td><%= link_to 'Show', campus %></td>
-        <td><%= link_to 'Edit', edit_campus_path(campus) %></td>
-        <td><%= link_to 'Destroy', campus, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= campus.name %></td>
+        <td><%= campus.street_address %></td>
+        <td><%= campus.city %></td>
+        <td><%= campus.state %></td>
+        <td><%= campus.zip_code %></td>
+        <td><%= campus.phone_number %></td>
+        <td><%= link_to campus do %>
+              <span class="glyphicon glyphicon-eye-open" title="Display"></span>
+          <% end %>
+        </td>
+        <td><%= link_to edit_campus_path(campus) do %>
+              <span class="glyphicon glyphicon-pencil" title="Edit"></span>
+          <% end %>
+        </td>
+        <td><%= link_to campus, method: :delete, data: { confirm: 'Are you sure?' } do %>
+              <span class="glyphicon glyphicon-remove" title="Remove"></span>
+          <% end %>
+        </td>
       </tr>
-    <% end %>
+  <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Campus', new_campus_path %>
